@@ -1,16 +1,41 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/checkbox.css" />
 </head>
 <body>
-<h1>Это тестовая страница</h1>
-<div>coool</div>
-{% for todo in todo_list %}
-<h3>{{ todo.text }}</h3>
-{% endfor %}
+<section>
+    <div class="create_container">
+        <input class="create_input" type="text" placeholder="Create new tasks"/>
+        <button class="create_button">Add</button>
+    </div>
+
+    <div class="todo_container">
+
+        <div class="todo_item">
+            <div class="todo_item_header">
+                <label class="checkbox_container">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <h4>1</h4>
+            </div>
+            <div class="todo_item_footer">
+                <p>17.04<span>17:00</span></p>
+                <div class="action_buttons">
+                    <img src="./icons/unmarked.png" />
+                    <img src="./icons/delete.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
