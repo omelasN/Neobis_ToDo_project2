@@ -6,6 +6,7 @@ from.models import ToDo
 def homepage(request):
     return render(request, "index.html")
 
+
 def test(request):
     todo_list = ToDo.objects.all()
     context = {
