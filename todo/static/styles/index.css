@@ -6,7 +6,7 @@
 }
 
 section {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ section {
 }
 
 .create container {
-    width: 80%;
+    width: 100%;
 }
 
 .create input {
